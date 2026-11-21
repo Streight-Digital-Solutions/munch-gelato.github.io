@@ -26,7 +26,9 @@ h1,h2,p{
 h1{
     font-size: 5vw;
 }
-
+a{
+    color: var(--links-color);
+}
 .mask{
     padding: 0;
     margin:0;
@@ -142,7 +144,7 @@ footer {
   border-radius:5vw;
   background-image: linear-gradient(to right,var(--primary-opacity),var(--secondary-opacity));
   color:var(--primary-color);
-  width: 90%;
+  width: 70%;
 }
 
 .copyright{
@@ -152,10 +154,15 @@ footer {
   color: var(--primary-color);
   font-family: var(--primary-font);
   text-align: center;
-  font-size: 1.1vw;
-    a{
-    display: block;
-  }
+  font-size: 2vw;
+    .inline-link{
+        text-decoration: none;
+        color: var(--links-color);
+        display: block;
+        &:hover{
+            color: var(--primary-color);
+        }
+    }
 }
 .socials {
  padding:0vw 0vw 0vw 1vw;
@@ -191,19 +198,23 @@ footer {
         font-size: 5vw;
     }
     section{
-        margin: 2vw;
-        width: auto;
+        margin: auto;
+        width: 90%;
         p{
             font-size: 5vw;
         }
     }
     .elfsight-app-4f8693bf-b03f-4d71-819d-b38f7b52d341{
-     width:85%;
-     margin: 4vw;
+     width: 85%;
+     margin: auto;
 
     }
-    .footer{
-        font-size:5vw;
+    footer{
+        width:90%;
+        .copyright {
+            font-size:5vw;
+        }
+        
     }
 }
 /*----------------------------------------------------------------------------------------------------------------*/
