@@ -292,13 +292,14 @@ footer {
 /*-------------------------------------------------   GAME -------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------*/
 .article{
+    top:0;
     h1{
     color:var(--tertiary-color);
     font-size:4vw;
     margin:2vw;
     filter: drop-shadow(0 0 1rem #000000);
     }
-    position: absolute;
+    position: fixed;
     z-index: 2;
     width:20%;
     background: none;
