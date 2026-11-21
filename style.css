@@ -88,7 +88,7 @@ header{
 
 .main-nav a:hover {
     background-image: linear-gradient(to right,var(--primary-color),var(--secondary-color));
-    color: var(--links-color);
+    color: var(--tertiary-color);
     border: solid 0.3vw var(--links-color);
 }
 
@@ -151,7 +151,7 @@ footer {
   margin-top:2vw;
   margin-bottom:0vw;
   padding:1vw;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   font-family: var(--primary-font);
   text-align: center;
   font-size: 2vw;
