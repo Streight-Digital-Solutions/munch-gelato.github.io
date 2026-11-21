@@ -17,6 +17,7 @@ html,body{
     width:100%;
     height:100%;
     overflow-x: hidden;
+    
 }
 
 h1,h2,p{
@@ -32,13 +33,15 @@ h1{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #00000094;
-    z-index: 0;
+    background-color: #00000044;
     overflow-x: hidden;
 }
 
 header{
+    width: 100%;
     display: block;
+    margin:0;
+    padding: 0;
 }
 
 .main-logo{
@@ -180,12 +183,16 @@ footer {
 
 /* SCREEN SIZES */
 @media screen and (max-width:600px){
+
+    body,html,.mask,.video,header{
+        max-width:600px;
+    }
     .main-nav a{
         font-size: 5vw;
     }
     section{
-        margin: 4vw;
-        width: 90%;
+        margin: 2vw;
+        width: auto;
         p{
             font-size: 5vw;
         }
