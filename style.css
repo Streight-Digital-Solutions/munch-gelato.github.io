@@ -40,6 +40,26 @@ html,body{
     }
 }
 
+.game-btn{
+    position: fixed;
+    top:1vw;
+    left:1vw;
+    border-radius: 1vw;
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    font-family: var(--primary-font);
+    font-size: 2vw;
+    animation: glow 3s infinite;
+    z-index: 2;
+    a{
+        text-decoration: none;
+        color:var(--tertiary-color);
+        &:hover{
+            color:var(--links-color);
+        }
+    }
+}
+
 h1,h2,h3,h4,p{
     font-family: var(--primary-font);
 }
@@ -150,6 +170,7 @@ header{
         font-size: 2vw;
         margin:2vw;
         padding:2vw;
+        text-align: center;
     }
     h1{
         color: var(--links-color) ;
@@ -202,12 +223,21 @@ section{
     padding: 0;
     margin:0;
 }
+.Link__A-sc-199c5d0d-0 fCHURo AuthorBlock__UsernameProfileLink-sc-dc100626-5 hcBNGv es-header-account-author-username-link {
+    color: var(--tertiary-color);
+}
 .elfsight-app-4f8693bf-b03f-4d71-819d-b38f7b52d341{
     width:55%;
     margin:1vw auto;
     padding: 2vw;
-    border-radius: 5vw;
+    border-radius: 8vw;
     background-image: linear-gradient(to right,var(--primary-opacity),var(--secondary-opacity));
+    font-family: var(--primary-font);
+    font-size: 5vw;
+    letter-spacing: 0.5vw;
+    color: var(--tertiary-color);
+
+    
 }
 
 footer {
@@ -347,21 +377,25 @@ footer {
 /*-------------------------------------------------   GAME -------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------*/
 .article{
+    position:relative;
+    height:fit-content;
+    
     top:0;
     #munch-hub{
-        margin-top: 0vw;
+        justify-content: center;
+        margin:0vw auto;
+        width: 70%;
+        height: 100%;
 
     }
     h1{
+    text-align: center;
     color:var(--tertiary-color);
-    font-size:2vw;
-    margin:2vw 2vw 0vw 2vw;
+    font-size:5vw;
+    margin:2vw 2vw 2vw 2vw;
     filter: drop-shadow(0 0 1rem var(--primary-color));
     }
-    position: fixed;
-    z-index: 2;
-    width:18%;
-    background: none;
+
 }
 
 /*----------------------------------------------------------------------------------------------------------------*/
@@ -443,12 +477,17 @@ textarea,input{
     }
     .order-now{
         font-size: 6vw;
+        width: 25%;
+    }
+    .game-btn{
+        font-size: 4vw;
+        width: 20%;
     }
     .main-nav a{
         font-size: 5vw;
     }
-    section{
-        margin: 4vw auto;
+    section,.welcome-section{
+        margin: 2vw auto;
         padding: 4vw 0vw;
         width: 90%;
         h1{
